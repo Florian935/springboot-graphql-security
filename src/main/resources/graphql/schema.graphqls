@@ -1,0 +1,13 @@
+type Query {
+    findCustomerById(customerId: Int): Customer
+}
+
+type Mutation {
+    saveCustomer(name: String): Customer
+}
+
+type Customer {
+    customerId: ID!
+    name: String
+}
+
